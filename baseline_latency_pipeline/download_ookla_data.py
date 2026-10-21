@@ -42,8 +42,8 @@ def download_ookla_data(year, quarter, service="fixed"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Download and filter Ookla Open Data for Albay.")
-    parser.add_argument("--year", type=int, default=2024, help="Year of the dataset (e.g. 2024)")
-    parser.add_argument("--quarter", type=int, default=4, help="Quarter of the dataset (1-4)")
+    parser.add_argument("--year", type=int, default=2026, help="Year of the dataset (e.g. 2026)")
+    parser.add_argument("--quarter", type=int, default=1, help="Quarter of the dataset (1-4)")
     parser.add_argument("--service", type=str, default="fixed", choices=["fixed", "mobile"], help="Service type (fixed or mobile)")
     
     args = parser.parse_args()
